@@ -1,4 +1,5 @@
 import random
+import os
         
 def RSP():
     i=input("가위 바위 보: ")
@@ -95,11 +96,9 @@ def rotto():
             if i[k]==j[a]:
                 l=l+1
     print("추첨")
-    for k in range(6):
-        print(j[k])
+    print(j)
     print("내 번호")
-    for k in range(6):
-        print(i[k])
+    print(i)
     
     if l==6:
         print("1등입니다!")
@@ -160,3 +159,5 @@ while True:
     elif choose=="종료":
         end(Money)
         break
+    input("넘어가려면 엔터:")
+    os.system('cls')
